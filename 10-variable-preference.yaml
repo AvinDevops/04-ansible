@@ -10,8 +10,8 @@
     private: false
   tasks:
   - name: print msg
-    vars: #vars from task level
-      Wishes: "Morning from task level"
+    # vars: #vars from task level
+    #   Wishes: "Morning from task level"
     ansible.builtin.debug:
       msg: "Hi, Good {{Wishes}}"
 
@@ -20,3 +20,4 @@
 #2.Var file
 #3.play level var
 #4.Inventory
+#5.Task level var
