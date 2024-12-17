@@ -11,6 +11,7 @@
   tasks:
   - name: print msg
     vars: #vars from task level
+      Wishes: "Morning from task level"
     ansible.builtin.debug:
       msg: "Hi, Good {{Wishes}}"
 
