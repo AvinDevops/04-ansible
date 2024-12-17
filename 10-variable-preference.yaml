@@ -1,7 +1,7 @@
 - name: variable preferences
   hosts: localhost
-  vars: #play level vars
-    Wishes: "Morning from play level"
+  # vars: #play level vars
+  #   Wishes: "Morning from play level"
   # vars_files: #var from file
   # - vars.yaml
   vars_prompt: #vars from prompt
@@ -17,3 +17,4 @@
 
 #1.Arguments
 #2.Var file
+#3.play level var
