@@ -2,8 +2,8 @@
   hosts: localhost
   vars: #play level vars
     Wishes: "Morning"
-  vars_files: #var from file
-  - vars.yaml
+  # vars_files: #var from file
+  # - vars.yaml
   vars_prompt: #vars from prompt
   - name : WISHES
     prompt: please enter wishes
@@ -13,3 +13,7 @@
     vars: #vars from task level
     ansible.builtin.debug:
       msg: "Hi, Good {{Wishes}}"
+
+
+#1.Arguments
+#2.Var file
