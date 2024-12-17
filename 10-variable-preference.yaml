@@ -5,7 +5,7 @@
   # vars_files: #var from file
   # - vars.yaml
   vars_prompt: #vars from prompt
-  - name : WISHES
+  - name : Wishes
     prompt: please enter wishes
     private: false
   tasks:
@@ -16,8 +16,3 @@
       msg: "Hi, Good {{Wishes}}"
 
 
-#1.Arguments
-#2.Var file
-#3.play level var
-#4.Inventory
-#5.Task level var
