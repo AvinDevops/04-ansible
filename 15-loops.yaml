@@ -3,7 +3,7 @@
   tasks:
   - name: uisng loops
     ansible.builtin.debug:
-      name: "{{item}}"
+      msg: "{{item}}"
     loop:
     - nginx
     - postfix
