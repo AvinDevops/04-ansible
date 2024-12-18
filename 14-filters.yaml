@@ -13,3 +13,12 @@
   - name: using uppercase filter
     ansible.builtin.debug:
       msg: "{{ 'Avinash'| upper }}"
+
+- name: lowercase
+  hosts: localhost
+  vars:
+    wishes: "Hello Avinash"
+  tasks:
+  - name: using lowercase filter
+    ansible.builtin.debug:
+      msg: "{{ wishes | lower }}"
