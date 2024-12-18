@@ -10,4 +10,4 @@
   tasks:
   - name: using uppercase filter
     ansible.builtin.debug:
-      msg: "Avinash | uppercase "
+      msg: "{{Avinash | uppercase }}"
