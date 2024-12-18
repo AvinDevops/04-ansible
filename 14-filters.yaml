@@ -71,4 +71,4 @@
 
   - name: after convert
     ansible.builtin.debug:
-     msg: "{{my_item|item2dict}}"
+     msg: "{{my_item|items2dict}}"
