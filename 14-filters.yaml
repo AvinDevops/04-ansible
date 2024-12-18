@@ -1,6 +1,13 @@
-- name: filters
+- name: default
   hosts: localhost
   tasks:
   - name: using default filter
     ansible.builtin.debug:
       msg: "Hi {{Name | default('Avinash')}}"
+
+- name: uppercase
+  hosts: 
+  tasks:
+  - name: using uppercase filter
+    ansible.builtin.debug:
+      msg: "Avinash | uppercase "
