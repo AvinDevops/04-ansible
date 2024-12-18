@@ -55,5 +55,5 @@
 
   - name: After convert
     ansible.builtin.debug:
-      msg: "{{my_dict|items2dict}}"
+      msg: "{{my_dict|dict2items}}"
 
