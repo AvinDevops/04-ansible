@@ -61,10 +61,14 @@
   hosts: localhost
   vars:
     my_item:
-    - {"key": "Course", "value": "DevOps AWS"},
-    - {"key": "Trainer", "value": "Avinash"},
+    - {"key": "Course", "value": "DevOps AWS"}
+    - {"key": "Trainer", "value": "Avinash"}
     - {"key": "Duration", "value": "130hrs"}
   tasks:
-  - name: list to dict
+  - name: before convert
+    ansible.builtin.debug:
+      msg: "{{my_item}}"
+
+  - name: after convert
     ansible.builtin.debug:
      msg: "{{my_item|item2dict}}"
