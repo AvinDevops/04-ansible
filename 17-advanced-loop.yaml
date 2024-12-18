@@ -3,8 +3,8 @@
   tasks:
   - name: using advanced loop and installing
     ansible.builtin.dnf:
-      name: "{{name.item}}"
-      state: "{{state.item}}"
+      name: "{{item.name}}"
+      state: "{{item.state}}"
     loop:
     - {name:'nginx', state:'absent'}
     - {name:'postfix', state:'latest'}
