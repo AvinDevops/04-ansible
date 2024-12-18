@@ -1,5 +1,6 @@
 - name: installing
   hosts: localhost
+  become: yes
   tasks:
   - name: installing by loop
     ansible.builtin.dnf:
