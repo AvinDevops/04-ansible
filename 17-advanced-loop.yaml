@@ -1,0 +1,10 @@
+- name: advanced loop
+  hosts: localhost
+  tasks:
+  - name: using advanced loop and installing
+    ansible.builtin.dnf:
+      name: "{{name.item}}"
+      state: "{{state.item}}"
+    loop:
+    - {name:'nginx', state:'absent'}
+    - {name:'postfix', state:'latest'}
