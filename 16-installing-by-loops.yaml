@@ -2,7 +2,7 @@
   hosts: localhost
   tasks:
   - name: installing by loop
-    ansible.builtin.dng:
+    ansible.builtin.dnf:
       name: "{{item}}"
       state: latest 
     loop:
