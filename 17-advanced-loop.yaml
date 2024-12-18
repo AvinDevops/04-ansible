@@ -1,7 +1,7 @@
 - name: advanced loop
   hosts: localhost
   tasks:
-  - name: using advanced loop and installing
+  - name: installing packages
     ansible.builtin.dnf:
       name: "{{item.name}}"
       state: "{{item.state}}"
