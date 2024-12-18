@@ -6,7 +6,7 @@
       msg: "Hi {{Name | default('Avinash')}}"
 
 - name: uppercase
-  hosts: 
+  hosts: localhost
   tasks:
   - name: using uppercase filter
     ansible.builtin.debug:
