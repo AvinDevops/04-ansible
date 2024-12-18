@@ -10,8 +10,8 @@
       Devops: 3 #number
       Aws: 2
       Docker: 1
-    Real Project: True #boolean
+    RealProject: True #boolean
   tasks:
   - name: print information
     ansible.builtin.debug:
-      msg: "Hi course is: {{Course}} and tools: {{Tools}} and eperience is: {{Experienc}} and real project: {{Real Project}}"
+      msg: "Hi course is: {{Course}} and tools: {{Tools}} and eperience is: {{Experienc}} and real project: {{RealProject}}"
